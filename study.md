@@ -38,7 +38,24 @@ As it makes sense to you please write the following in JSON format:
 - Has lived in two places recently: 123 Fake street, and 2 Muchinfo Road
 
 ```json
-<!-- your answer here -->
+{"Jason's things":
+  {"pet": [
+    {"cat": "Mr. Kitty"},
+  ]},
+  {"roomates": [
+    {"roomate": "Dave"},
+    {"roomate": "Miller"}
+  ]},
+  {"loveOf": [
+    {"team": "Red Sox"},
+    {"team": "Patriots"},
+    {"team": "Bruins"}
+    ]},
+  {"livedIn": [
+    {"address": "Fake Street"},
+    {"address": "2 Muchninfo Road"}
+    ]}
+}
 ```
 
 ...I forgot, my roomate Dave has two goldfish, one named Bob (he's red) and the
@@ -46,7 +63,32 @@ other named Mr.MagicNibbles (yellow) and bites a bit. Please copy the JSON you
 already wrote and include the information about Dave's fish.
 
 ```json
-<!-- your answer here -->
+{"Jason's things":
+  {"pets": [
+    {"cat": "Mr. Kitty"},
+  ]},
+  {"roomates": [
+    {"roomate": "Dave",
+      {"pets": [
+        {"name": "Bob",
+          "type": "goldfish",
+          "color": "red"},
+        {"name": "Mr. MagicNibbles",
+          "type": "goldfish",
+          "color": "yellow"}
+        ]}},
+    {"roomate": "Miller"}
+  ]},
+  {"loveOf": [
+    {"team": "Red Sox"},
+    {"team": "Patriots"},
+    {"team": "Bruins"}
+    ]},
+  {"livedIn": [
+    {"address": "Fake Street"},
+    {"address": "2 Muchninfo Road"}
+    ]}
+}
 ```
 
 ## JSON Methods
@@ -54,7 +96,8 @@ already wrote and include the information about Dave's fish.
 Using the JSON your wrote above, can you write a method on the JSON?
 
 ```json
-<!-- your answer here -->
+No, as JSON is not an object literal, but just a data exchange format, and
+cannot take methods.
 ```
 
 ## JSON Comments
@@ -62,5 +105,6 @@ Using the JSON your wrote above, can you write a method on the JSON?
 Using the JSON your wrote above, can you write a comment in the JSON?
 
 ```json
-<!-- your answer here -->
+No, as JSON is not an object literal, but just a data exchange format, and
+cannot take comments.
 ```
